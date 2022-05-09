@@ -14,57 +14,55 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react'
 
 // reactstrap components
-import { Button, Container } from "reactstrap";
+import { Button, Container } from 'reactstrap'
 
 export default function PresentationHeader() {
   const scrollPage = (e) => {
-    e.preventDefault();
-    document.getElementById("pricing").scrollIntoView();
-  };
+    e.preventDefault()
+    document.getElementById('pricing').scrollIntoView()
+  }
   return (
     <>
       <div className="page-header">
         <img
           alt="..."
           className="path"
-          src={require("assets/img/blob.png").default}
+          src={require('assets/img/blob.png').default}
         />
         <img
           alt="..."
           className="path2"
-          src={require("assets/img/path2.png").default}
+          src={require('assets/img/path2.png').default}
         />
         <img
           alt="..."
           className="shapes triangle"
-          src={require("assets/img/triunghiuri.png").default}
+          src={require('assets/img/triunghiuri.png').default}
         />
         <img
           alt="..."
           className="shapes wave"
-          src={require("assets/img/waves.png").default}
+          src={require('assets/img/waves.png').default}
         />
         <img
           alt="..."
           className="shapes squares"
-          src={require("assets/img/patrat.png").default}
+          src={require('assets/img/patrat.png').default}
         />
         <img
           alt="..."
           className="shapes circle"
-          src={require("assets/img/cercuri.png").default}
+          src={require('assets/img/cercuri.png').default}
         />
         <Container>
           <div className="content-center brand">
             <h1 className="h1-seo">
-              BLK• <small className="text-warning">PRO React</small>
+              Horo <small className="text-warning">Finance</small>
             </h1>
-            <h3>
-              Start the Development With this Badass Bootstrap 4 Design System.
-            </h3>
+            <h3>You make your own luck</h3>
             <Button
               className="btn-simple mt-4"
               color="warning"
@@ -72,7 +70,7 @@ export default function PresentationHeader() {
               size="lg"
               target="_blank"
             >
-              BUY NOW
+              Connect Wallet
             </Button>
             <Button
               className="btn-link mt-4 d-block"
@@ -81,11 +79,11 @@ export default function PresentationHeader() {
               onClick={scrollPage}
               size="lg"
             >
-              <u>Show pricing</u>
+              {/* <u>Show pricing</u> */}
             </Button>
           </div>
         </Container>
       </div>
     </>
-  );
+  )
 }

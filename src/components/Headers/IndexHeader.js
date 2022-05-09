@@ -14,10 +14,10 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react'
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Container } from 'reactstrap'
 
 export default function Index() {
   return (
@@ -38,5 +38,5 @@ export default function Index() {
         </Container>
       </div>
     </>
-  );
+  )
 }
